@@ -10,7 +10,7 @@ DVC project template with mkDocs integrated
 ### STEP 03- Create a conda environment after opening the repository in VSCODE
 
 ```bash
-conda create --prefix ./env python=3.7 -y
+conda create --prefix ./env python=3.8 -y
 ```
 
 ```bash
@@ -32,3 +32,16 @@ dvc init
 ```
 
 ### STEP 06- commit and push the changes to the remote repository
+
+
+#### To see mkdocs documentation on local host
+```bash
+mkdocs serve
+```
+
+#### To handle large size data xml file
+```bash
+git lfs install
+git lfs track "*.xml"
+git add .gitattributes
+```
